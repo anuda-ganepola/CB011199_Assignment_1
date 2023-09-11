@@ -1,0 +1,900 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #0f1831;
+    color: rgb(235, 224, 224);
+    width: 99vw;
+}
+
+.logo {
+    max-height: 120px;
+    max-width: 80%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navlist li {
+    margin-right: 30px;
+}
+
+.navlist a {
+    color: rgb(235, 224, 224);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navlist a:hover {
+    color: rgb(73, 152, 213);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 2px;
+}
+
+@media(max-width:768px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navlist {
+        display: none; /* Hide the main navigation list */
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Display the hamburger icon */
+        cursor: pointer;
+        padding: 0 20px; /* Add some padding to the icon for spacing */
+    }
+
+    .mobile-menu {
+        display: none; /* Initially hide the mobile menu */
+        width: 100%;
+        background-color: #0f1831;
+    }
+
+    .mobile-navlist {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobile-navlist li {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-navlist a {
+        color: rgb(235, 224, 224);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .mobile-navlist a:hover {
+        color: rgb(73, 152, 213);
+    }
+
+    .mobile-menu.open {
+        display: block; /* Show the mobile menu when hamburger icon is clicked */
+    }
+}
+
+/* Footer Style */
+.footer {
+    background-color: #0f1831;
+    color: rgb(235, 224, 224);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerTopic {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-media, .links, .details {
+    flex: 1;
+    text-align: left;
+    margin: 0 20px;
+}
+
+.social-media p, .links p, .details p {
+    margin: 5px 0;
+}
+
+.social-media a, .links a, .details a {
+    color: rgb(235, 224, 224);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-media a:hover, .links a:hover, .details a:hover {
+    color: rgb(73, 152, 213);
+}
+
+/* Mobile Footer Style */
+@media (max-width: 768px) {
+    .footer .content .links {
+        display: none; /* Hide the links section in mobile view */
+    }
+
+    .footer .content .social-media {
+        text-align: center; /* Center-align social media icons */
+    }
+
+    .footer .content .details {
+        text-align: center; /* Center-align address and contact details */
+        margin-top: 20px;
+    }
+
+    .footer .content .details p {
+        margin: 5px 0;
+    }
+
+    .footer .content .details a {
+        color: rgb(235, 224, 224);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .footer .content .details a:hover {
+        color: rgb(73, 152, 213);
+    }
+
+    /* Adjust the footerTopic font size for mobile */
+    .footer .footerTopic {
+        font-size: 20px;
+    }
+}
+/* Mobile Footer Style End */
+
+
+html body {
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.hotelimage {
+    width: 99vw;
+    margin-top: 1%;
+}
+
+@media screen  and (max-width:768px){
+    .hotelimage{
+        width: 99vw;
+    }
+
+}
+    
+
+/* to centered the text */
+.hotelmessage {
+    padding-top: 3%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.hotel {
+    /* to get the message to cener*/
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.para1 {
+    margin-top: 13%;
+    width: 70vw;
+    font-size: x-large;
+    background-color: rgb(0, 0, 0, 0.5);
+
+}
+
+@media screen and (max-width:768px) {
+    .hotelmessage{
+        font-size: medium;
+        bottom: 10px;
+        width: 100%;
+        margin: 0;
+    }
+    .para1 {
+        font-size: 40px;
+    }
+}
+
+.welcome {
+    display: flex;
+    /*to put side by side div class*/
+    background-color: whitesmoke;
+    margin-top: 1%;
+    height: 330px;
+    width: 99vw;
+}
+
+.welcomeimage1 {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 25vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.welcomeimage2 {
+    padding-top: 0.5%;
+    padding-right: 0.5%;
+    padding-left: 0.8%;
+    width: 25vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.welcomemessage {
+    padding-top: 0.65%;
+    padding-left: 0.5%;
+    font-size: 17px;
+    width: 50vw;
+    padding: 15px;
+    line-height: 1.4;
+}
+@media screen and (max-width:768px){
+    .welcome{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 99vw;
+        
+    }
+    .welcomeimage1 {
+        width: 99vw;
+    }
+    .welcomeimage2{
+        width: 99vw;
+    }
+}
+    
+
+
+.abouth1 {
+    text-align: center;
+}
+
+.aboutpage {
+    margin-top: 2%;
+    background-color: whitesmoke;
+    width: 99vw;
+    display: flex;
+    height: 350px;
+
+}
+
+.aboutmessage {
+    width: 60%;
+    line-height: 1.6;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+}
+
+.aboutimage1 {
+    padding-top: 0.5%;
+    padding-right: .5%;
+    width: 40vw;
+    height: 320px;
+}
+
+.destination {
+    padding: 1%;
+    text-align: center;
+}
+
+.google-map {
+    position: relative;
+}
+
+.google-map iframe {
+    height: 500px;
+    width: 99vw;
+    top: 0;
+}
+
+.adventure {
+    text-align: center;
+    font-style: oblique;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.yalapark {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 99vw;
+    display: flex;
+}
+
+.yalamessage {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 40vw;
+}
+
+.yalaparkimage11 {
+    width: 30vw;
+    height: 350px;
+    margin-top: 2.3%;
+    margin-left: 1.5%;
+
+}
+
+.yalaparkimage22 {
+    width: 30vw;
+    height: 350px;
+    margin-top: 2.3%;
+    margin-bottom: 2.3%;
+    margin-left: 4%;
+    margin-right: 0.9%;
+}
+
+.sithulpawwa {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 99vw;
+    display: flex;
+}
+
+.sithulpawwamessage {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 33vw;
+}
+
+.sithulpawwaimage11 {
+    width: 33vw;
+    height: 350px;
+    padding-left: 2.5;
+    margin-top: 2.3%;
+    margin-left: .5%;
+
+}
+
+.sithulpawwaimage22 {
+    width: 33vw;
+    height: 350px;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.naturewalk {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 99vw;
+    display: flex
+}
+
+.naturewalkmessage {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 40vw;
+}
+
+.naturewalkimage11 {
+    width: 450px;
+    height: 350px;
+    margin-top: 2.2%;
+    margin-left: 2%;
+
+}
+
+.naturewalkimage22 {
+    width: 450px;
+    height: 350px;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.boatride {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 99vw;
+    display: flex
+}
+
+.boatridemessage {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 32vw;
+}
+
+.boatrideimage11 {
+    width: 33vw;
+    height: 350px;
+    margin-top: 2.2%;
+    margin-left: 2%;
+
+}
+
+.boatrideimage22 {
+    width: 33vw;
+    height: 350px;
+    margin-top: 2.3%;
+    margin-bottom: 2.3%;
+    margin-left: 4%;
+    margin-right: 0.9%;
+}
+
+.restaurenttopic {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 99vw;
+    text-align: center;
+}
+
+.restaurent {
+    margin-top: 2%;
+    background-color: whitesmoke;
+    padding-top: 2%;
+    width: 99vw;
+}
+
+.restaurentmessage {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0.5%;
+    line-height: 1.8;
+    width: 99vw;
+}
+
+.restaurentimages {
+    background-color: whitesmoke;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    width: 99vw;
+    display: flex;
+}
+
+.restaurent11 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding: 0.5%;
+}
+
+.restaurent22 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding: 0.5%;
+}
+
+.restaurent33 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding: 0.5%;
+}
+
+.bartopic {
+    padding-top: 1%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.bar {
+    margin-top: 2%;
+    background-color: whitesmoke;
+    width: 99vw;
+    height: 370px;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.barmessage {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    line-height: 1.5;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 40vw;
+}
+
+.bar11 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 2.2%;
+    padding-bottom: 2.2%;
+    padding-right: .5%;
+}
+
+.bar33 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 2.3%;
+    padding-bottom: 2.3%;
+    padding-left: 4%;
+    padding-right: 0.5%;
+}
+
+.poolbartopic {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 99vw;
+    text-align: center;
+}
+
+.poolbar {
+    background-color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 99vw;
+}
+
+.poolbarmessage {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1.5%;
+    line-height: 1.8;
+    width: 99vw;
+}
+
+.poolbarimages {
+    background-color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 99vw;
+    display: flex;
+}
+
+.poolbar11 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding-right: .5%;
+}
+
+.poolbar22 {
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding-right: .5%;
+}
+
+.poolbar33 {
+    padding-top: 2.3%;
+    width: 33vw;
+    height: 300px;
+    padding-right: .5;
+}
+
+.eventstopic {
+    margin-top: 2%;
+    margin-left: 2.3%;
+    text-align: center;
+}
+
+
+.eventandcatering {
+    background-color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 99vw;
+    display: flex;
+}
+
+
+.eventsandcatering1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+    padding-right: 1%;
+}
+
+/* Centered clickhere1 */
+.clickhere1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.eventsandcatering2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: .9%;
+    padding-right: 1%;
+    width: 33.3vw;
+    height: 300px;
+   
+}
+
+.eventsandcatering3 {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 2.3%;
+    width: 33.3vw;
+    height: 300px;
+}
+
+/* Centered clickhere3 */
+.clickhere3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.branchesheading {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.branchesmainpara {
+    padding-top: 2%;
+    background-color: whitesmoke;
+    padding-top: 2%;
+    width: 99vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+.branch1 {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 99vw;
+    display: flex;
+    margin-bottom: 3.5%;
+}
+
+.branch1image1 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 3%;
+    padding-left: 1%;
+
+}
+
+
+.branch1googlemap {
+    width: 30vw;
+    height: 350px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.branch1para {
+    padding-top: 4%;
+    line-height: 1.5;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1%;
+    width: 40vw;
+}
+
+.branch2 {
+    margin-top: 1%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 99vw;
+    display: flex;
+    
+}
+
+.branch2para {
+    padding-top: 3.5%;
+    line-height: 1.5;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 40vw;
+    padding-bottom: 3.5%;
+}
+
+.branch2googlemap {
+    width: 30vw;
+    height: 350px;
+    padding-left: 2.5;
+    margin-top: .7%;
+    margin-left: .5%;
+}
+
+.branch2image2 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.branch3 {
+    margin-top: 3.5%;
+    background-color: whitesmoke;
+    height: 370px;
+    width: 99vw;
+    display: flex;;
+}
+
+.branch3image3 {
+    width: 30vw;
+    height: 350px;
+    padding-top: 2.3%;
+    padding-left: 1.5%;
+}
+
+.branch3googlemap {
+    width: 30vw;
+    height: 350px;
+    padding-top: .7%;
+    margin-bottom: 2.3%;
+    padding-left: .5%;
+    padding-right: 0.9%;
+}
+
+.branch3para {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    line-height: 1.5;
+    padding-left: 1.5%;
+    padding-right: .5%;
+    width: 40vw;
+}
+
+.booknow {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text],input[type=email],input[type=number],input[type=date], select {
+    width: 100%;
+    padding: 12px; /*size of boxes*/
+    border: 2px solid #80a2f2;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 2px 12px 50px 10px;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #312c87;
+    color: white;
+    padding: 12px 30px; /*submit button width and height */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #2926d7;
+  }
+  
+  .bookingbox {
+    border-radius: 5px;
+    background-color: #c1d5f7;
+    padding: 20px;
+    width: 99vw;
+  }
+  
+  .clm1 {
+    float: left;
+    width: 30%; /*sliding the boxes8*/
+    margin-top: 8px; /*set the margin difference between boxes*/
+  }
+  
+  .clm2 {
+    float: left;
+    width: 60%; /*set the width of boxes*/
+    margin-top: 6px;
+  }
+  
+  
+  .row:after {   /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
