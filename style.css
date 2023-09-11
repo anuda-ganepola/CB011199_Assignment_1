@@ -22,6 +22,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -77,17 +78,21 @@ img {
     }
 
     .navlist {
-        display: none; /* Hide the main navigation list */
+        display: none;
+        /* Hide the main navigation list */
     }
 
     .mobile-menu-icon {
-        display: block; /* Display the hamburger icon */
+        display: block;
+        /* Display the hamburger icon */
         cursor: pointer;
-        padding: 0 20px; /* Add some padding to the icon for spacing */
+        padding: 0 20px;
+        /* Add some padding to the icon for spacing */
     }
 
     .mobile-menu {
-        display: none; /* Initially hide the mobile menu */
+        display: none;
+        /* Initially hide the mobile menu */
         width: 100%;
         background-color: #0f1831;
     }
@@ -115,7 +120,8 @@ img {
     }
 
     .mobile-menu.open {
-        display: block; /* Show the mobile menu when hamburger icon is clicked */
+        display: block;
+        /* Show the mobile menu when hamburger icon is clicked */
     }
 }
 
@@ -144,38 +150,49 @@ img {
     margin-bottom: 10px;
 }
 
-.social-media, .links, .details {
+.social-media,
+.links,
+.details {
     flex: 1;
     text-align: left;
     margin: 0 20px;
 }
 
-.social-media p, .links p, .details p {
+.social-media p,
+.links p,
+.details p {
     margin: 5px 0;
 }
 
-.social-media a, .links a, .details a {
+.social-media a,
+.links a,
+.details a {
     color: rgb(235, 224, 224);
     text-decoration: none;
     font-size: 16px;
 }
 
-.social-media a:hover, .links a:hover, .details a:hover {
+.social-media a:hover,
+.links a:hover,
+.details a:hover {
     color: rgb(73, 152, 213);
 }
 
 /* Mobile Footer Style */
 @media (max-width: 768px) {
     .footer .content .links {
-        display: none; /* Hide the links section in mobile view */
+        display: none;
+        /* Hide the links section in mobile view */
     }
 
     .footer .content .social-media {
-        text-align: center; /* Center-align social media icons */
+        text-align: center;
+        /* Center-align social media icons */
     }
 
     .footer .content .details {
-        text-align: center; /* Center-align address and contact details */
+        text-align: center;
+        /* Center-align address and contact details */
         margin-top: 20px;
     }
 
@@ -198,6 +215,7 @@ img {
         font-size: 20px;
     }
 }
+
 /* Mobile Footer Style End */
 
 
@@ -211,13 +229,14 @@ html body {
     margin-top: 1%;
 }
 
-@media screen  and (max-width:768px){
-    .hotelimage{
-        width: 99vw;
+@media screen and (max-width:768px) {
+    .hotelimage {
+        height: 400px;
+        object-fit: cover;
     }
 
 }
-    
+
 
 /* to centered the text */
 .hotelmessage {
@@ -230,7 +249,6 @@ html body {
 }
 
 .hotel {
-    /* to get the message to cener*/
     position: relative;
     text-align: center;
     color: white;
@@ -244,16 +262,19 @@ html body {
 }
 
 @media screen and (max-width:768px) {
-    .hotelmessage{
+    .hotelmessage {
         font-size: medium;
         bottom: 10px;
         width: 100%;
-        margin: 0;
+        margin-top: 5%;
     }
+
     .para1 {
-        font-size: 24px; /* Adjust the font size for smaller screens */
-        margin-top: 5%; /* Adjust the margin-top for smaller screens */
-        width: 90vw; /* Adjust the width for smaller screens */
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10%;
+        width: 90vw;
+        margin-left: 5%;
     }
 }
 
@@ -263,8 +284,10 @@ html body {
     background-color: whitesmoke;
     margin-top: 1%;
     width: 99vw;
-    flex-wrap: wrap; /* Allow the items to wrap to the next line on smaller screens */
-    justify-content: center; /* Center the items horizontally */
+    height: 340px;
+    flex-direction: row;
+    /* Revert to horizontal layout for screens wider than 768px */
+
 }
 
 .welcomeimage1,
@@ -272,27 +295,44 @@ html body {
     padding-top: 0.5%;
     padding-right: 0.5%;
     padding-left: 0.8%;
-    width: 100%; /* Make the images take up 100% of the container width on smaller screens */
-    height: auto; /* Maintain aspect ratio */
+    width: 23vw;
+    height: 320px;
     object-fit: cover;
 }
 
 .welcomemessage {
-    padding-top: 0.65%;
-    padding-left: 0.5%;
+    padding-top: 3%;
+    padding-left: 2%;
     font-size: 17px;
-    width: 100%; /* Make the message take up 100% of the container width on smaller screens */
-    padding: 15px;
+    width: 50vw;
     line-height: 1.4;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .welcome {
-        flex-direction: row; /* Revert to horizontal layout for screens wider than 768px */
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        color: blanchedalmond;
     }
-    .welcomeimage1,
+
+    .welcomeimage1 {
+        width: 100%;
+    }
+
     .welcomeimage2 {
-        width: 25vw; /* Restore the original width for larger screens */
+        display: none;
+    }
+
+    .welcomemessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        font-size: 11px;
+        padding: 2%;
+        transform: translateY(-50%);
     }
 }
 
@@ -312,8 +352,8 @@ html body {
 .aboutmessage {
     width: 60%;
     line-height: 1.6;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
     padding-top: 1%;
 }
 
@@ -322,6 +362,36 @@ html body {
     padding-right: .5%;
     width: 40vw;
     height: 320px;
+}
+
+.aboutmessagemobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutpage {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .aboutimage1 {
+        width: 100%;
+    }
+
+    .aboutmessage {
+        display: none;
+    }
+
+    .aboutmessagemobile {
+        display: block;
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: left;
+        margin-bottom: 2%;
+    }
 }
 
 .destination {
@@ -667,7 +737,7 @@ html body {
     padding-right: 1%;
     width: 33.3vw;
     height: 300px;
-   
+
 }
 
 .eventsandcatering3 {
@@ -745,7 +815,7 @@ html body {
     height: 370px;
     width: 99vw;
     display: flex;
-    
+
 }
 
 .branch2para {
@@ -778,7 +848,8 @@ html body {
     background-color: whitesmoke;
     height: 370px;
     width: 99vw;
-    display: flex;;
+    display: flex;
+    ;
 }
 
 .branch3image3 {
@@ -811,79 +882,97 @@ html body {
     margin-bottom: 3%;
     text-align: center;
 }
+
 * {
     box-sizing: border-box;
-  }
-  
-  input[type=text],input[type=email],input[type=number],input[type=date], select {
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=date],
+select {
     width: 100%;
-    padding: 12px; /*size of boxes*/
+    padding: 12px;
+    /*size of boxes*/
     border: 2px solid #80a2f2;
     border-radius: 4px;
     resize: vertical;
-  }
-  
-  label {
+}
+
+label {
     padding: 2px 12px 50px 10px;
     display: inline-block;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #312c87;
     color: white;
-    padding: 12px 30px; /*submit button width and height */
+    padding: 12px 30px;
+    /*submit button width and height */
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #2926d7;
-  }
-  
-  .bookingbox {
+}
+
+.bookingbox {
     border-radius: 5px;
     background-color: #c1d5f7;
     padding: 20px;
     width: 99vw;
-  }
-  
-  .clm1 {
+}
+
+.clm1 {
     float: left;
-    width: 30%; /*sliding the boxes8*/
-    margin-top: 8px; /*set the margin difference between boxes*/
-  }
-  
-  .clm2 {
+    width: 30%;
+    /*sliding the boxes8*/
+    margin-top: 8px;
+    /*set the margin difference between boxes*/
+}
+
+.clm2 {
     float: left;
-    width: 60%; /*set the width of boxes*/
+    width: 60%;
+    /*set the width of boxes*/
     margin-top: 6px;
-  }
-  
-  
-  .row:after {   /* Clear floats after the columns */
+}
+
+
+.row:after {
+    /* Clear floats after the columns */
     content: "";
     display: table;
     clear: both;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
-  }
-  table {
+}
+
+table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ddd;
-  }
-  
-  th, td {
+}
+
+th,
+td {
     text-align: left;
     padding: 8px;
-  }
-  
-  tr:nth-child(even){background-color: #f2f2f2}
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
