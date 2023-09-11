@@ -13,6 +13,11 @@
         <header class="header">
             <nav class="nav">
                 <a href="home.html"><img src="images/logo3.png" class="logo"></a>
+                <div class="mobile-menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
                 <ul class="navlist">
                     <li><a href="home.html">Home</a></li>
                     <li><a href="adventure.html">Adventure</a></li>
@@ -21,6 +26,15 @@
                     <li><a href="booking.html">Booking</a></li>
                 </ul>
             </nav>
+            <div class="mobile-menu">
+                <ul class="mobile-navlist">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="adventure.html">Adventure</a></li>
+                    <li><a href="restaurant&bar.html">Restaurant & Bar</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
         </header>
 
         <h2 class="booknow">Book Now</h2>
@@ -82,5 +96,46 @@
             </div>
         </form>
     </div>
+    <div class="footer">
+        <div class="footerTopic">
+            Grand Horizon Yala
+        </div>
+        <div class="content">
+            <div class="social-media">
+                <h4>Social</h4>
+                <p><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsettings%2Faccount%3Flang%3Den"
+                        target="_blank">Twitter</a></p>
+                <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                <p><a href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a></p>
+            </div>
+            <div class="links">
+                <h4>Links</h4>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="adventure.html">Adventure</a></p>
+                <p><a href="restaurant&bar.html">Restaurant & Bar</a></p>
+                <p><a href="branches.html">Branches</a></p>
+                <p><a href="booking.html">Booking</a></p>
+            </div>
+            <div class="details">
+                <h4 class="address">Address</h4>
+                <p>No: 96/A <br>Park Rd, <br>Tissamaharama, <br>Sri Lanka.</p>
+            </div>
+            <div class="details">
+                <h4 class="contact">Contact</h4>
+                <p><a href="tel:94701234567">+94-771234567</a></p>
+                <p><a href="mailto:info@serenehotels.com">info@grandhorizon.com</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+            const mobileMenu = document.querySelector(".mobile-menu");
+
+            mobileMenuIcon.addEventListener("click", function () {
+                mobileMenu.classList.toggle("open");
+            });
+        });
+    </script>
     </body>
 </html>
