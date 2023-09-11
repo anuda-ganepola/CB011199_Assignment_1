@@ -13,7 +13,7 @@ html body {
 .header {
     background-color: #0f1831;
     color: rgb(235, 224, 224);
-    width: 99vw;
+    width: 100vw;
 }
 
 /* Logo */
@@ -60,7 +60,7 @@ html body {
     background-color: #0f1831;
     color: rgb(235, 224, 224);
     margin-top: 1%;
-    width: 99vw;
+    width: 100vw;
 }
 
 .footerTopic {
@@ -133,7 +133,7 @@ margin-bottom: 3%;
 }
 
 .nightfunction {
-    width: 99vw;
+    width: 100vw;
     height: 50%;
     display: flex;
     background-color: whitesmoke;
@@ -165,7 +165,7 @@ margin-bottom: 3%;
 }
 
 .dayfunction {
-    width: 99vw;
+    width: 100vw;
     height: 50%;
     display: flex;
     background-color: whitesmoke;

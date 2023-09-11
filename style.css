@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .header {
     background-color: #0f1831;
     color: rgb(235, 224, 224);
-    width: 99vw;
+    width: 100vw;
 }
 
 .logo {
@@ -225,7 +229,7 @@ html body {
 }
 
 .hotelimage {
-    width: 99vw;
+    width: 100vw;
     margin-top: 1%;
 }
 
@@ -283,7 +287,7 @@ html body {
     /* To put side by side div class */
     background-color: whitesmoke;
     margin-top: 1%;
-    width: 99vw;
+    width: 100vw;
     height: 340px;
     flex-direction: row;
     /* Revert to horizontal layout for screens wider than 768px */
@@ -319,6 +323,7 @@ html body {
 
     .welcomeimage1 {
         width: 100%;
+        padding: 0%;
     }
 
     .welcomeimage2 {
@@ -333,6 +338,7 @@ html body {
         font-size: 11px;
         padding: 2%;
         transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -343,7 +349,7 @@ html body {
 .aboutpage {
     margin-top: 2%;
     background-color: whitesmoke;
-    width: 99vw;
+    width: 100vw;
     display: flex;
     height: 350px;
 
@@ -405,7 +411,7 @@ html body {
 
 .google-map iframe {
     height: 500px;
-    width: 99vw;
+    width: 100vw;
     top: 0;
 }
 
@@ -414,6 +420,20 @@ html body {
     font-style: oblique;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    .adventure {
+        font-size: 18px; /* Increase font size for a modern look */
+        color: #000000; /* Use a modern color */
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.11); /* Add a semi-transparent background */
+        padding: 10px 20px; /* Add some padding for visual appeal */
+        border-radius: 5px; /* Add rounded corners for a modern touch */
+    }
 }
 
 .yalapark {
@@ -450,11 +470,42 @@ html body {
     margin-right: 0.9%;
 }
 
+@media screen and (max-width: 768px) {
+    .yalapark {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .yalaparkimage11 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .yalaparkimage22 {
+        display: none;
+    }
+
+    .yalamessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
 .sithulpawwa {
     margin-top: 1%;
     background-color: whitesmoke;
     height: 370px;
-    width: 99vw;
+    width: 100vw;
     display: flex;
 }
 
@@ -468,7 +519,7 @@ html body {
 }
 
 .sithulpawwaimage11 {
-    width: 33vw;
+    width: 32vw;
     height: 350px;
     padding-left: 2.5;
     margin-top: 2.3%;
@@ -477,11 +528,42 @@ html body {
 }
 
 .sithulpawwaimage22 {
-    width: 33vw;
+    width: 32vw;
     height: 350px;
     margin-top: 2%;
     margin-left: 3%;
     margin-right: 3%;
+}
+
+@media screen and (max-width: 768px) {
+    .sithulpawwa {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .sithulpawwaimage11 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .sithulpawwaimage22 {
+        display: none;
+    }
+
+    .sithulpawwamessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
 }
 
 .naturewalk {
@@ -517,6 +599,37 @@ html body {
     margin-right: 3%;
 }
 
+@media screen and (max-width: 768px) {
+    .naturewalk {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .naturewalkimage11 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .naturewalkimage22 {
+        display: none;
+    }
+
+    .naturewalkmessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
 .boatride {
     margin-top: 1%;
     background-color: whitesmoke;
@@ -535,7 +648,7 @@ html body {
 }
 
 .boatrideimage11 {
-    width: 33vw;
+    width: 32vw;
     height: 350px;
     margin-top: 2.2%;
     margin-left: 2%;
@@ -543,12 +656,43 @@ html body {
 }
 
 .boatrideimage22 {
-    width: 33vw;
+    width: 32vw;
     height: 350px;
     margin-top: 2.3%;
     margin-bottom: 2.3%;
     margin-left: 4%;
     margin-right: 0.9%;
+}
+
+@media screen and (max-width: 768px) {
+    .boatride {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .boatrideimage11 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .boatrideimage22 {
+        display: none;
+    }
+
+    .boatridemessage {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
 }
 
 .restaurenttopic {
