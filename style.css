@@ -905,6 +905,11 @@ html body {
         text-align: justify;
     }
 
+    .poolbarimages {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
     .poolbar11 {
         display: none;
     }
