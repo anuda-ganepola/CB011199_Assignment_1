@@ -424,15 +424,20 @@ html body {
 
 @media screen and (max-width: 768px) {
     .adventure {
-        font-size: 18px; /* Increase font size for a modern look */
-        color: #000000; /* Use a modern color */
+        font-size: 18px;
+        /* Increase font size for a modern look */
+        color: #000000;
+        /* Use a modern color */
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 2px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        background-color: rgba(0, 0, 0, 0.11); /* Add a semi-transparent background */
-        padding: 10px 20px; /* Add some padding for visual appeal */
-        border-radius: 5px; /* Add rounded corners for a modern touch */
+        background-color: rgba(0, 0, 0, 0.11);
+        /* Add a semi-transparent background */
+        padding: 10px 20px;
+        /* Add some padding for visual appeal */
+        border-radius: 5px;
+        /* Add rounded corners for a modern touch */
     }
 }
 
@@ -747,13 +752,13 @@ html body {
 }
 
 @media screen and (max-width: 768px) {
-    
-    .restaurentmessage{
+
+    .restaurentmessage {
         padding-left: 6%;
         padding-right: 6%;
         text-align: justify;
     }
-    
+
     .restaurent11 {
         width: 100%;
         padding-left: 0%;
@@ -769,7 +774,7 @@ html body {
     .restaurent33 {
         display: none;
     }
-    
+
 }
 
 .bartopic {
@@ -928,7 +933,7 @@ html body {
         padding-top: 3%;
         padding-bottom: 0%;
         object-fit: cover;
-        
+
     }
 
     .poolbar33 {
@@ -1007,7 +1012,7 @@ html body {
         margin-top: 20%;
     }
 
-    .eventstopic{
+    .eventstopic {
         margin-bottom: -30%;
     }
 
@@ -1083,6 +1088,42 @@ html body {
     width: 40vw;
 }
 
+@media screen and (max-width: 768px) {
+    .branch1 {
+        height: auto;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    .branch1image1 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .branch1googlemap {
+        width: 100vw;
+    }
+
+    .branch1googlemap iframe {
+        width: 100vw;
+    }
+
+    .branch1para {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
 .branch2 {
     margin-top: 1%;
     background-color: whitesmoke;
@@ -1117,6 +1158,50 @@ html body {
     padding-right: 3%;
 }
 
+.branch2mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .branch2mobile {
+        display: inline-flex;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .branch2 {
+        display: none;
+    }
+
+    .branch2mobileimage1 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .branch2mobilegooglemap {
+        width: 100%;
+    }
+
+    .branch2mobilegooglemap iframe {
+        width: 100%;
+    }
+
+    .branch2mobilepara {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+}
+
 .branch3 {
     margin-top: 3.5%;
     background-color: whitesmoke;
@@ -1149,6 +1234,41 @@ html body {
     padding-left: 1.5%;
     padding-right: .5%;
     width: 40vw;
+}
+
+@media screen and (max-width: 768px) {
+    .branch3 {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .branch3image3 {
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .branch3googlemap {
+        width: 100%;
+    }
+
+    .branch3googlemap iframe {
+        width: 100%;
+    }
+
+    .branch3para {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: smaller;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
 }
 
 .booknow {
@@ -1235,18 +1355,70 @@ input[type=submit]:hover {
 }
 
 table {
+    width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid #e0e0e0;
+    /* Light gray border */
+    background-color: #fff;
+    /* White background */
 }
 
 th,
 td {
+    padding: 12px;
     text-align: left;
-    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    /* Add a bottom border to separate rows */
+}
+
+th {
+    background-color: #f7f7f7;
+    /* Light gray background for header */
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    /* Alternate row background color */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style list items in the table */
+td ul li {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    /* Dark text color */
+}
+
+/* Add spacing between the rating and facilities/activities text */
+td:nth-child(4) ul li {
+    margin-top: 10px;
+}
+
+/* Style the rating */
+td:nth-child(4) {
+    font-weight: bold;
+    color: #009688;
+    /* Green color for ratings */
+}
+
+/* Add responsiveness for mobile devices */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 16px;
+        /* Increase font size for mobile devices */
+    }
+
+    th,
+    td {
+        padding: 8px;
+        /* Reduce padding for smaller screens */
+    }
 }
