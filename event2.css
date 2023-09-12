@@ -1,131 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html body {
-    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
-    width: 100%;
-}
-
-/* Header */
-.header {
-    background-color: #0f1831;
-    color: rgb(235, 224, 224);
-    width: 100vw;
-}
-
-/* Logo */
-.logo {
-    max-height: 120px;
-    max-width: 80%;
-    padding-left: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-/* Navigation */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.navlist {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.navlist li {
-    margin-right: 30px;
-}
-
-.navlist a {
-    color: rgb(235, 224, 224);
-    text-decoration: none;
-    font-size: large;
-    font-weight: bold;
-}
-
-.navlist a:hover {
-    color: rgb(73, 152, 213);
-}
-
-/* Footer Style */
-.footer {
-    background-color: #0f1831;
-    color: rgb(235, 224, 224);
-    margin-top: 1%;
-    width: 100vw;
-}
-
-.footerTopic {
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 1.5%;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.footer .content {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footer .content p {
-    margin-bottom: 1.3rem;
-}
-
-.footer .content a {
-    text-decoration: none;
-    color: rgb(235, 224, 224);
-}
-
-.footer .content a:hover {
-    border-bottom: 1px solid rgb(235, 224, 224);
-}
-
-.footer .content h4 {
-    margin-bottom: 1.3rem;
-    font-size: 19px;
-}
-
-footer {
-    text-align: center;
-}
-
-@media (max-width: 767px) {
-    .footer .content {
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
-    }
-
-    .footer {
-        position: unset;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    .footer .content,
-    .footer {
-        font-size: 14px;
-    }
-}
-
-@media (orientation: landscape) and (max-height: 500px) {
-    .footer {
-        position: unset;
-    }
-}
-
-/* Footer Style End */
-
 .function2heading{
 text-align: center;
 margin-top: 3%;
@@ -160,6 +32,30 @@ margin-bottom: 3%;
     padding-left: 1.5%;
     padding-right: 1.5%;
 }
+
+@media screen and (max-width: 768px) {
+    .meeting {
+        flex-direction: column;
+    }
+    .meetingimage11 {
+        width: 100vw;
+        height: 50vw;
+    }
+    .meetingmessage11 {
+        width: 100vw;
+    }
+    .meetingmessagepara {
+        margin-top: 0%;
+    }
+    .meetingimage11 {
+        margin-top: 0%;
+    }
+    .meetingmessage1 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
 .wedding {
     margin-top: 3%;
     width: 100vw;
@@ -190,3 +86,25 @@ margin-bottom: 3%;
     padding-right: 1.5%;
 }
 
+@media screen and (max-width: 768px) {
+    .wedding {
+        flex-direction: column;
+    }
+    .weddingimage11 {
+        width: 100vw;
+        height: 50vw;
+    }
+    .weddingmessage11 {
+        width: 100vw;
+    }
+    .weddingpara {
+        margin-top: 0%;
+    }
+    .weddingimage11 {
+        margin-top: 0%;
+    }
+    .weddingmessage1 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
